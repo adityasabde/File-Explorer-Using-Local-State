@@ -54,7 +54,7 @@ const Iterate_Data_For_Getting_ParentObj = ( findId ,  children ) => {
 // Actions Function ========================================================================
 
 const onClickFolder = (event)=>{
-    let inputValue = document.getElementById("inputTag");
+    let inputValue = document.getElementById("InputValueId");
     let parentObj = Iterate_Data_For_Getting_ParentObj(event.parentNode.id , data);
 
     let arrayOfChildren = parentObj.children;
@@ -78,7 +78,7 @@ const onClickFolder = (event)=>{
 }
 
 const onClickFile = (event)=>{
-    let inputValue = document.getElementById("inputTag");
+    let inputValue = document.getElementById("InputValueId");
     
     let parentObj = Iterate_Data_For_Getting_ParentObj(event.parentNode.id , data);
     let newobj =  createFileNode( parentObj , inputValue.value , "file" );
