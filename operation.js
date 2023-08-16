@@ -14,7 +14,7 @@ const Iterate_Children_for_print = ( main_div ,  children ) => {
         }
         main_div.appendChild(addingdiv);
         if(obj.children != null){
-            Iterate_Children_for_print( addingdiv , obj.children )
+            Iterate_Children_for_print( addingdiv.lastElementChild , obj.children )
         }
     }
 }
